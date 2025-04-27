@@ -54,17 +54,28 @@
         .roadmap li span {
             font-weight: bold;
         }
+        /* Spinning Animation */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .spin {
+            animation: spin 20s linear infinite;
+            width: 80%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
 
     <h1>Welcome to CircusChain!</h1>
 
-    <!-- Display the CircusChain image -->
-    <img src="circustent.png" alt="CircusChain Tent" />
+    <!-- Spinning CircusChain image -->
+    <img src="circustent.png" alt="CircusChain Tent" class="spin" />
 
     <p>Join the Circus. Own the Madness.</p>
-    <p>Get ready for <strong>Random AI Circus Events</strong>—where chaos meets fun!</p>
+    <p>Get ready for <strong>Random AI Circus Events</strong> — where chaos meets fun!</p>
 
     <button class="btn" onclick="window.location.href='YOUR_PUMPFUN_LINK'">Join the Madness</button>
 
